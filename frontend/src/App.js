@@ -1,9 +1,20 @@
-import './App.css';
+import Navbar from "./components/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Products from "./components/Products";
+import Footer from "./components/Footer"
 
 function App() {
   return (
     <div className="App">
-        MERN Project
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Products />} />
+         
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+
     </div>
   );
 }
