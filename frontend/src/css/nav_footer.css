@@ -23,5 +23,8 @@
   width: 100%;
   background-color: black;
   color: white;
-  height: 50px;
+  height: 80px;
+}
+.footer h6,h5{
+  margin-top: 10px;
 }

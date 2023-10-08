@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Products from "./components/Products";
 import Footer from "./components/Footer"
+import SignUp from "./components/SignUp";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Products />} />
+          <Route path="/signup" element={<SignUp />} />
          
         </Routes>
         <Footer/>
